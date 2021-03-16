@@ -1,0 +1,223 @@
+/* The Modal (background) */
+.modal-display {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 50%;
+  /* Half width */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #922121;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: gray;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  background-color: #e2dfdf;
+  color: #888;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: gray;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #4f687d;
+}
+
+body .container {
+  background-color: #e6e6e6;
+  color: gray;
+}
+
+body .container .wrapper-jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  height: 60%;
+}
+
+body .container .wrapper-jumbotron .jumbotron-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .container .wrapper-jumbotron .jumbotron-message i {
+  color: green;
+  line-height: 30px;
+  font-size: 1.2em;
+  margin: 8px;
+}
+
+body .container .wrapper-jumbotron .jumbotron-message h2 {
+  line-height: 30px;
+  color: #33394d;
+  margin: 8px;
+}
+
+body .wrapper-button {
+  height: 40%;
+  width: 100%;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper-button .button1, body .wrapper-button .button2 {
+  background-color: #ffffff;
+  border: 2px solid gray;
+  border-radius: 5px;
+  color: gray;
+  padding: 15px 32px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  margin: 5px 0px;
+  cursor: pointer;
+  width: 100%;
+}
+
+body .wrapper-button .button2 {
+  background-color: #33394d;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container {
+    width: 75%;
+    height: 75%;
+  }
+  body .container .wrapper-button {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container .wrapper-button .button1, body .container .wrapper-button .button2 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  body .container .wrapper-button .button2 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

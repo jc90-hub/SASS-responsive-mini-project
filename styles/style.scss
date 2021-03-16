@@ -1,0 +1,107 @@
+@import"./modal";
+$lineHeightJumbotron:30px;
+$marginJumbotron:8px;
+$cardBackgroundColor:rgb(230, 230, 230);
+$textAndBorder: rgb(128, 128, 128);
+$buttonContinueBackground:rgb(51, 57, 77);
+$bodyBackgroundColor:#4f687d;
+$borderRadius:5px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    height:100vh;
+    display:flex;    
+    align-items: flex-end;
+    background-color:$bodyBackgroundColor ;
+    .container{
+        background-color:$cardBackgroundColor;
+        color:$textAndBorder;
+    
+        .wrapper-jumbotron{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding:10px;
+            height:60%;
+            .jumbotron-message{        
+                display:flex;
+                flex-direction: row;  
+                      
+                i{
+                    color:green;
+                    line-height: $lineHeightJumbotron;  
+                    font-size:1.2em;
+                    margin:$marginJumbotron;
+                    
+                }    
+                h2{
+                    line-height: $lineHeightJumbotron;
+                    color:$buttonContinueBackground;   
+                    margin:$marginJumbotron;         
+                }    
+            }    
+        }
+    
+    }    
+        .wrapper-button{
+            height:40%;
+            width:100%;
+            padding:10px 20px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;        
+            .button1 {            
+                background-color: #ffffff; 
+                border: 2px solid $textAndBorder;
+                border-radius: $borderRadius;
+                color: $textAndBorder;
+                padding: 15px 32px;
+                text-align: center;
+                font-weight: bold;
+                font-style: italic;        
+                font-size: 16px;
+                margin: 5px 0px;
+                cursor: pointer;
+                width:100%;            
+            }        
+            .button2{
+                @extend .button1;
+                background-color:$buttonContinueBackground;
+                color: #ffffff;                 
+            }
+        }
+}
+@media only screen and (min-width:768px){
+    body{        
+        align-items: center;
+        justify-content: center;
+       
+    .container{
+        width:75%;
+        height:75%;        
+        .wrapper-button{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .button1{
+                flex-basis:50%;
+                margin-left:5px;
+                margin-right: 5px;
+            }    
+            .button2{
+                flex-basis:50%;
+            }
+        }
+    }
+}
+}
+
+
+
+
+
+

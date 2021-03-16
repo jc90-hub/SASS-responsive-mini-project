@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet2 Booking</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <link href="./font-awesome/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- <script src="./script.js"></script> -->
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper-jumbotron">
+            <div class="jumbotron-message">
+                <i class="fas fa-check-circle"></i><h2>Congratulations your jet2 holiday booking has been confirmed</h2>
+            </div>            
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos facere quo magnam cupiditate quibusdam! Obcaecati alias ullam quia? Facere iste, dolores ipsum doloribus fugit atque repudiandae laboriosam cum veniam?</p>
+            </div>
+        </div>       
+        <hr>        
+        <div class="wrapper-button">
+            <!-- <div class="button-group">-->
+                <button onclick='cancelFunction()' id="cancel-btn" class="button1" >Cancel</button>        
+                <button class="button2">Continue</button>   
+                    
+            <!-- </div> -->
+        </div>        
+    </div> 
+  
+    <!-- The Modal (Cancel Button)-->
+    <div id="modal-cancel" class="modal-display">
+    
+        <!-- Modal content -->
+        <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Thanks for visiting</h2>
+        </div>
+        <div class="modal-body">
+            <p>We'd Love to </p>
+            <p>see you again...</p>
+        </div>
+        <div class="modal-footer">
+            <h3>Bye for now</h3>
+        </div>
+        </div>    
+    </div>    
+</body>
+</html>
